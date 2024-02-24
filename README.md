@@ -4,26 +4,13 @@ This Weather App allows users to view current weather information and forecasts 
 
 ## Screenshots
 
-![Splash Screen](screenshots/splash_screen.png)
-*Figure 1: Splash Screen*
+| ![Splash Screen](ss/splash.jpg) | ![Current Weather](ss/weather.jpg) | ![Forecast](ss/net_err.jpg) | ![Search Location](ss/srh_loc.jpg) |
+| :------------------------------: | :---------------------------------: | :--------------------------: | :----------------------------------: |
+|       *Splash Screen*            |         *Current Weather*          |       *Forecast*             |         *Search Location*           |
 
-![Current Weather](screenshots/current_weather.png)
-*Figure 2: Current Weather*
-
-![Forecast](screenshots/forecast.png)
-*Figure 3: Forecast*
-
-![Search Location](screenshots/search_location.png)
-*Figure 4: Search Location*
-
-![Login](screenshots/login.png)
-*Figure 5: Login*
-
-![Signup](screenshots/signup.png)
-*Figure 6: Sign Up*
-
-![Forgot Password](screenshots/forgot_password.png)
-*Figure 7: Forgot Password*
+| ![Login](ss/login.jpg) | ![Signup](ss/signup.jpg) | ![Forgot Password](ss/fgt_pwd.jpg) |
+| :--------------------: | :----------------------: | :---------------------------------: |
+|        *Login*         |         *Sign Up*         |       *Forgot Password*             |
 
 ## Features
 
@@ -61,5 +48,3 @@ This Weather App allows users to view current weather information and forecasts 
    cd weather-app
    flutter pub get
    flutter run
-
-   
