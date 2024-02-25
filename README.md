@@ -43,7 +43,7 @@ This Weather App allows users to view current weather information and forecasts 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/yashjoshi007/weather.git
 
    cd weather-app
    flutter pub get
