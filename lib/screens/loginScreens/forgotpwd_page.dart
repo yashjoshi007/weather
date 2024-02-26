@@ -90,7 +90,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     child: Container(
                       height: 100.0,
                       width: 100.0,
-                      child: Image.network('https://aneridevelopers.b-cdn.net/wp-content/uploads/2021/03/full-logo.png'),
+                      child: Image.asset('assets/ic_mostly_cloudy.png'),
                     ),
                   ),
                 ],

@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:tikeri/screens/loginScreens/signIn_page.dart';
+import 'package:tikeri/screens/ui/homepage.dart';
 
 import '../../components/button.dart';
 import '../../components/textfield.dart';
 import '../../constants/theme.dart';
 import '../../main.dart';
-import '../HomePage.dart';
+import '../ui/weather.dart';
 import 'forgotpwd_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -54,8 +55,8 @@ class _LoginScreenState extends State<LoginPage> {
                     children: <Widget>[
                       SizedBox(
                           height: 100,
-                          child: Image.network(
-                            "https://aneridevelopers.b-cdn.net/wp-content/uploads/2021/03/full-logo.png",
+                          child: Image.asset(
+                            "assets/ic_mostly_cloudy.png",
                             fit: BoxFit.contain,
                           )),
                       SizedBox(height: 45),
@@ -201,8 +202,15 @@ class _LoginScreenState extends State<LoginPage> {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
       try {
-        await _auth.signInWithEmailAndPassword(
+        final UserCredential userCredential =  await _auth.signInWithEmailAndPassword(
             email: email, password: password);
+
+        final User? user = userCredential.user;
+
+        // Update user's online status in Firestore
+        await FirebaseFirestore.instance.collection('users').doc(user!.uid).update({
+          'online': true,
+        });
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => MyHomePage()),
@@ -276,6 +284,7 @@ class _LoginScreenState extends State<LoginPage> {
         'displayName': displayName,
         'email': email,
         'photoUrl': photoUrl,
+        'online' : true,
       });
 
       return userCredential;

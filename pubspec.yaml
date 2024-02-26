@@ -36,19 +36,30 @@ dependencies:
   google_sign_in: ^5.4.4
   firebase_database: ^10.0.14
   firebase_storage: ^11.0.11
+  animated_splash_screen: ^1.1.0
+  bottom_navy_bar:
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  http:
+  dio: ^4.0.0
+  flutter_bloc: ^7.0.0
+  intl: ^0.17.0
+#  sqflite: ^2.0.0+3
+  geolocator: ^9.0.2
+  geocoding: ^2.0.5
   google_fonts: ^4.0.3
   fluttertoast: ^8.2.1
-  file_picker: ^6.1.1
-  image_picker: ^0.8.4+4
-  video_player: ^2.6.0
-  flutter_svg: ^1.0.0
-  agora_rtc_engine: 5.3.1
-  permission_handler: ^11.2.0
-  firebase_messaging: ^14.7.10
-  zego_zim: ^2.7.1
-  zego_zimkit: ^1.9.1
-  zego_uikit_prebuilt_call: ^3.1.0
-  zego_uikit_prebuilt_live_streaming: ^2.3.4
+#  file_picker: ^6.1.1
+#  image_picker: ^0.8.4+4
+#  video_player: ^2.6.0
+#  flutter_svg: ^1.0.0
+#  agora_rtc_engine: 5.3.1
+#  permission_handler: ^11.2.0
+#  firebase_messaging: ^14.7.10
+#  zego_zim: ^2.7.1
+#  zego_zimkit: ^1.9.1
+#  zego_uikit_prebuilt_call: ^3.1.0
+#  zego_uikit_prebuilt_live_streaming: ^2.3.4
   flutter:
     sdk: flutter
 

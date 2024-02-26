@@ -4,11 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:tikeri/main.dart';
+import 'package:tikeri/screens/ui/homepage.dart';
 import '../../components/button.dart';
 import '../../components/textfield.dart';
 import '../../constants/theme.dart';
 import '../../models/user_model.dart';
-import '../HomePage.dart';
+import '../ui/weather.dart';
 import 'login_page.dart';
 
 class signinPage extends StatefulWidget {
@@ -58,8 +59,8 @@ class _RegistrationScreenState extends State<signinPage> {
                   children: <Widget>[
                     SizedBox(
                         height: 60,
-                        child: Image.network(
-                          "https://aneridevelopers.b-cdn.net/wp-content/uploads/2021/03/full-logo.png",
+                        child: Image.asset(
+                          "assets/ic_mostly_cloudy.png",
                           fit: BoxFit.contain,
                         )),
                     SizedBox(height: 35),
@@ -164,7 +165,7 @@ class _RegistrationScreenState extends State<signinPage> {
                     ElevatedButton(
 
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
+                       // primary: Colors.white,
 
 
                         shape: RoundedRectangleBorder(
@@ -195,7 +196,7 @@ class _RegistrationScreenState extends State<signinPage> {
                               SizedBox(width: 10,),
 
                               Text('Signup using Google',style: MyTheme().textTheme.bodyText1
-                                  ?.copyWith(fontWeight: FontWeight.w500, color: Colors.black)),
+                                  ?.copyWith(fontSize: 12,fontWeight: FontWeight.w500, color: Colors.black)),
                             ]),
                       ),
                     ),
@@ -203,9 +204,7 @@ class _RegistrationScreenState extends State<signinPage> {
                     ElevatedButton(
 
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-
-
+                       // primary: Colors.white,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(26.0),
                         ),
@@ -218,7 +217,6 @@ class _RegistrationScreenState extends State<signinPage> {
                       child: Padding(
                         padding: EdgeInsets.fromLTRB(38, 15, 38,15),
                         child: Row(
-
                             children: [
                               SizedBox(
                                   height: 20,
@@ -230,7 +228,7 @@ class _RegistrationScreenState extends State<signinPage> {
                               SizedBox(width: 10,),
 
                               Text('Signup using Apple',style: MyTheme().textTheme.bodyText1
-                                  ?.copyWith(fontWeight: FontWeight.w500, color: Colors.black)),
+                                  ?.copyWith(fontSize: 12,fontWeight: FontWeight.w500, color: Colors.black)),
                             ]),
                       ),
                     ),
