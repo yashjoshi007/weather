@@ -40,7 +40,11 @@ dependencies:
   bottom_navy_bar:
   hive: ^2.0.4
   hive_flutter: ^1.1.0
+<<<<<<< HEAD
   http:
+=======
+#  http:
+>>>>>>> c01664fee364aa9b03f1e211448325fbba07af37
   dio: ^4.0.0
   flutter_bloc: ^7.0.0
   intl: ^0.17.0
